@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Line Transition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .text-container {
+            overflow: hidden;
+            height: 2em; /* Match to the line height */
+        }
+        .text-lines {
+            display: inline-block;
+            animation: slide 6s infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-2em); }
+            50% { transform: translateY(-4em); }
+            75% { transform: translateY(-6em); }
+            100% { transform: translateY(0); }
+        }
+        .text-line {
+            height: 2em; /* Adjust to the desired line height */
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="text-lines">
+            <div class="text-line">Line 1: Welcome to our website!</div>
+            <div class="text-line">Line 2: We offer amazing products.</div>
+            <div class="text-line">Line 3: Check out our latest deals.</div>
+            <div class="text-line">Line 4: Thank you for visiting.</div>
+        </div>
+    </div>
+</body>
+</html>

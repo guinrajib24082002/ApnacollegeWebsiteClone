@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.message-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #4A5BCF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.icon .line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #4A5BCF;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon .line:last-child {
+    top: 13px;
+}
